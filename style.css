@@ -3,6 +3,7 @@
 :root {
     --primary-color: #F5CF06;
     --secundary-color: #8E4106;
+    --fonte-padrao: "Righteous", sans-serif;
 }
 
 *{
@@ -14,7 +15,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    font-family: sans-serif, "Risghteous";
+    font-family: var(--fonte-padrao);
 }
 
 header {
@@ -39,11 +40,92 @@ header {
 }
 
 main {
-    background-color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
     height: 60%;
 }
 
+.pikachu {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.pikachu_fundo {
+    z-index: 0;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 1;
+    margin: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.container_apresentacao {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 75%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    color: var(--secundary-color);
+    padding: 5rem;
+    padding-top: 400px;
+
+}
+
+.apresentacao_titulo {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.apresentacao {
+    font-size: 24px;
+    max-width: 500px;
+}
+
+.botao_download {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+    font-size: 48px;
+    font-family: var(--fonte-padrao);
+    color: white;
+    background-color: var(--secundary-color);
+    padding: 20px;
+    border: none;
+}
+
 footer {
-    background-color: blue;
+    display: flex;
+    background-color: var(--primary-color);
     height: 20%;
+    padding: 5%;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
 }
