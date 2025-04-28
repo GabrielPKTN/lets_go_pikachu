@@ -51,6 +51,7 @@ main {
 }
 
 .pikachu {
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     position: absolute;
@@ -62,7 +63,7 @@ main {
 }
 
 .pikachu_fundo {
-    z-index: 0;
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     position: absolute;
@@ -152,7 +153,7 @@ footer {
 
 }
 
-@media (max-width: 428px) {
+@media (max-width: 586px) {
 
 
     header {
@@ -161,6 +162,12 @@ footer {
 
     main {
         height: 100%;
+    }
+
+    .pikachu_fundo, .pikachu {
+        max-width: 60%;
+        max-height: 60%;
+
     }
 
     .apresentacao_titulo {
@@ -172,8 +179,8 @@ footer {
     }
 
     .botao_download {
-        width: 312;
-        height: 100;
+        width: 312px;
+        height: 100px;
     }
 
 }
