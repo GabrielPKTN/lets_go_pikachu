@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --primary-color: #F5CF06;
+    --secundary-color: #8E4106;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,11 +14,28 @@
 body {
     width: 100vw;
     height: 100vh;
+    font-family: sans-serif, "Risghteous";
 }
 
 header {
-    background-color: black;
+    background-color:var(--primary-color);
     height: 20%;
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+    gap: 12px;
+    align-items: center;
+}
+
+.poke_bola {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+.titulo_pagina {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--secundary-color);
 }
 
 main {
