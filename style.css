@@ -29,11 +29,15 @@ header {
 }
 
 .poke_bola {
+    position: relative;
+    z-index: 1;
     max-width: 3rem;
     max-height: 3rem;
 }
 
 .titulo_pagina {
+    position: relative;
+    z-index: 1;
     font-size: 32px;
     font-weight: 600;
     color: var(--secundary-color);
@@ -72,7 +76,7 @@ main {
 .info {
     display: flex;
     flex-direction: row;
-    padding-bottom: 10px;
+    padding-bottom: 100px;
     align-items: flex-end;
     width: 100%;
 }
@@ -88,7 +92,8 @@ main {
     justify-content: left;
     color: var(--secundary-color);
     padding: 5rem;
-    padding-top: 400px;
+    padding-bottom: 100px;
+    padding-top: 20%;
 
 }
 
@@ -128,4 +133,34 @@ footer {
     font-size: 16px;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:768px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .info {
+        padding-top: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container_apresentacao {
+        width: 100vw;
+    }
+
+    .botao_download {
+        width: 40%;
+    }
+
+}
+@media (max-width:360px) {
+
 }
