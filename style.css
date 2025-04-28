@@ -39,7 +39,7 @@ header {
     position: relative;
     z-index: 1;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--secundary-color);
 }
 
@@ -74,54 +74,42 @@ main {
 }
 
 .info {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 100px;
-    align-items: flex-end;
-    width: 100%;
-}
-
-.container_apresentacao {
     position: relative;
     z-index: 1;
     display: flex;
-    width: 75%;
-    height: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: left;
-    color: var(--secundary-color);
-    padding: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
     padding-bottom: 100px;
-    padding-top: 20%;
+    align-items: flex-end;
+    width: 100%;
+    padding: 5%;
+}
 
+.container_apresentacao {
+    color: var(--secundary-color);
+    width: 600px;
 }
 
 .apresentacao_titulo {
     font-size: 64px;
-    font-weight: 800;
 }
 
 .apresentacao {
-    font-size: 24px;
-    max-width: 500px;
+    font-size: 20px;
 }
 
 .botao_download {
-    position: relative;
-    z-index: 1;
     display: flex;
-    flex-direction: row;
-    width: 20%;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    gap: 37px;
-    font-size: 48px;
     font-family: var(--fonte-padrao);
+    width: 400px;
+    height: 100px;
+    font-size: 48px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #8E4106;
     color: white;
-    background-color: var(--secundary-color);
-    padding: 20px;
     border: none;
 }
 
@@ -136,31 +124,39 @@ footer {
 }
 
 @media (max-width:768px) {
+    
+    header {
+        height: 5%;
+    }
 
     main {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        justify-content: center;
+        height: 85%;
     }
 
     .info {
-        padding-top: 80%;
-        display: flex;
+        padding: 0;
+        justify-content: flex-end;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-    }
-    
-    .container_apresentacao {
-        width: 100vw;
+        gap: 20px;
     }
 
-    .botao_download {
-        width: 40%;
+    .apresentacao_titulo {
+        text-align: center;
     }
 
+    .apresentacao {
+        text-align: center;
+    }
+
+    footer {
+        height: 5%;
+    }
 }
 @media (max-width:360px) {
+
+    header {
+        padding: 0;
+    }
 
 }
